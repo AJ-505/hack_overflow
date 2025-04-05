@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.text-center {
+  text-align: center;
+}
+body {
+  min-height: 100vh;
+  background: #5F5A78;
+}
+.root {
+  min-height: 100vh;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.root__logo {
+  width: 4rem;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  background-color: #2C2535;
+  border-radius: 12px;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  min-height: 80vh;
+  max-width: 850px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+.image-section__title {
+  margin-top: auto;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.form-section__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.input-group {
+  margin-bottom: 1.5rem;
+}
+.input-group__label {
+  margin-left: 0.7rem;
+}
+.input-group__input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  background: #3B354C;
+  font-size: 1rem;
+}
+.form-section__submit {
+  padding: 0.5em 1em;
+  background-color: #6A5ACD;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: opacity 100ms ease-out;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+}
+.form-section__signup-link:hover, .form-section__signup-link:focus {
+  color: #6A5ACD;
+}
+.form-section__submit:focus, .form-section__submit:hover {
+  opacity: 0.8;
+}
