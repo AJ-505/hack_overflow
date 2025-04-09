@@ -1,3 +1,13 @@
+/* Override browser autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #2C2535 inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 *,
 *::before,
 *::after {
@@ -13,7 +23,7 @@
 }
 body {
   min-height: 100vh;
-  background: #5F5A78;
+  background: #5f5a78;
 }
 .root {
   min-height: 100vh;
@@ -30,7 +40,7 @@ body {
 
 .container {
   width: 90%;
-  background-color: #2C2535;
+  background-color: #2c2535;
   border-radius: 12px;
   display: flex;
   gap: 1.5rem;
@@ -73,12 +83,23 @@ body {
   border: none;
   border-radius: 0.4rem;
   padding: 0.7rem;
-  background: #3B354C;
+  background-color: #3b354c;
+  color: #fff;
   font-size: 1rem;
+}
+.input-group__input--error {
+  border: 1px solid #ff4444;
+}
+.input-group__error {
+  color: #ff4444;
+  font-size: 0.8rem;
+  margin-left: 0.7rem;
+  margin-top: 0.3rem;
+  display: block;
 }
 .form-section__submit {
   padding: 0.5em 1em;
-  background-color: #6A5ACD;
+  background-color: #6a5acd;
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -87,9 +108,11 @@ body {
   margin-bottom: 1.5em;
   cursor: pointer;
 }
-.form-section__signup-link:hover, .form-section__signup-link:focus {
-  color: #6A5ACD;
+.form-section__signup-link:hover,
+.form-section__signup-link:focus {
+  color: #6a5acd;
 }
-.form-section__submit:focus, .form-section__submit:hover {
+.form-section__submit:focus,
+.form-section__submit:hover {
   opacity: 0.8;
 }
