@@ -26,12 +26,14 @@
             <div class="input-group">
               <label class="input-group__label" for="email">Email</label>
               <input
-                type="text"
+                type="email"
                 class="input-group__input"
-                id="username"
+                id="email"
                 placeholder="Enter a PAU email"
+                onblur="validatePauEmail(this)"
                 required
               />
+              <span class="input-group__error" id="email-error-message"></span>
             </div>
             <div class="input-group">
               <label class="input-group__label" for="username">Username</label>
@@ -63,5 +65,6 @@
         </div>
       </div>
     </div>
+    <script src="../src/index.js"></script>
   </body>
 </html>
